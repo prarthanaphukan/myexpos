@@ -1,0 +1,9 @@
+load --library $HOME/myexpos/expl/library.lib
+load --int=timer $HOME/myexpos/spl/spl_progs/timer_stg9.xsm
+load --exhandler $HOME/myexpos/spl/spl_progs/haltprog_stg6.xsm
+load --os $HOME/myexpos/spl/spl_progs/os_stg10.xsm
+load --init $HOME/myexpos/expl/expl_progs/init_stg10.xsm
+load --int=7 $HOME/myexpos/spl/spl_progs/int7_stg10.xsm
+load --int=10 $HOME/myexpos/spl/spl_progs/haltprog_stg6.xsm
+exit
+
