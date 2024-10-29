@@ -1,0 +1,12 @@
+load --init $HOME/myexpos/expl/samples/odd_init_stg14.xsm
+load --exec $HOME/myexpos/expl/samples/e_stg14.xsm
+load --int=timer $HOME/myexpos/spl/spl_progs/timer_stg14.xsm
+load --os $HOME/myexpos/spl/spl_progs/os_stg13.xsm
+load --int=10 $HOME/myexpos/spl/spl_progs/int10_stg14.xsm
+load --exhandler $HOME/myexpos/spl/spl_progs/haltprog_stg6.xsm
+load --library $HOME/myexpos/expl/library.lib
+load --int=7 $HOME/myexpos/spl/spl_progs/int7_stg10.xsm
+load --idle $HOME/myexpos/expl/samples/idle_stg14.xsm
+load --module 7 $HOME/myexpos/spl/spl_progs/mod_7_stg14.xsm
+load --module 5 $HOME/myexpos/spl/spl_progs/mod_5_stg14.xsm
+exit

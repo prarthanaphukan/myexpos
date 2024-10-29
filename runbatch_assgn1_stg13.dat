@@ -1,0 +1,11 @@
+load --init $HOME/myexpos/expl/expl_progs/odd_init_assgn1_stg13.xsm
+load --exec $HOME/myexpos/expl/samples/even_assgn1_stg13.xsm
+load --int=timer $HOME/myexpos/spl/spl_progs/timer_assgn1_stg13.xsm
+load --os $HOME/myexpos/spl/spl_progs/os_.xsm
+load --int=10 ../spl/spl_progs/int10_14.xsm
+load --exhandler ../spl/spl_progs/haltprog.xsm
+load --library ../expl/library.lib
+load --int=7 ../spl/spl_progs/sample_int7.xsm
+load --idle ../expl/samples/idle_12.xsm
+load --module 7 ../spl/spl_progs/boot_module_14.xsm
+load --module 5 ../spl/spl_progs/scheduler_14.xsm

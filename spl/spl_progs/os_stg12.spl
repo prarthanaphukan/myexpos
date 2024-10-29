@@ -1,4 +1,4 @@
-// load the idle code from disk blocks 11-12 to memory page 69-70
+n// load the idle code from disk blocks 11-12 to memory page 69-70
 loadi(69, 11);
 loadi(70, 12);
 
@@ -92,7 +92,7 @@ PTLR = 10;
 [PTBR + 18] = 77;
 [PTBR + 19] = "0110";
 
-[76 * 512] = [65 * 512 + 1]; // IP when init starts
+[76 * 512] = [65 * 512 + 1]; // IP when init starts, at the top of init stack
 
 // Setting up process table for IDLE
 [PROCESS_TABLE + 1] = 0;
@@ -113,9 +113,9 @@ PTLR = 10;
 [PROCESS_TABLE + 16 + 15] = 10;
 
 // Initialize SP to logical address
-SP = 8 * 512;
+SP = 8 * 512; // thats why this init process is exceuted first in this stage
 
 // System status table
-[SYSTEM_STATUS_TABLE + 1] = 1; // PID(init) = 1
+[SYSTEM_STATUS_TABLE + 1] = 1; // PID(init) = 1 // the PID of currently executing process to be kept here
 
 ireturn;

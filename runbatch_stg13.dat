@@ -1,0 +1,9 @@
+load --module 7 ../spl/spl_progs/mod_7_stg_13.xsm
+load --int=timer $HOME/myexpos/spl/spl_progs/timer_stg12.xsm
+load --os $HOME/myexpos/spl/spl_progs/os_stg13.xsm
+load --init $HOME/myexpos/expl/samples/init_stg11.xsm
+load --int=10 ../spl/spl_progs/haltprog_stg6.xsm
+load --exhandler ../spl/spl_progs/haltprog_stg6.xsm
+load --library ../expl/library.lib
+load --int=7 ../spl/spl_progs/int7_stg10.xsm
+load --idle ../expl/samples/idle_stg12.xsm
